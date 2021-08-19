@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  notebook:    
+    image: jupyter/scipy-notebook    
+    volumes:
+      - "${PWD}/work:/home/jovyan/work"
+      - "${PWD}/config/jupyter_notebook_config.py:/home/jovyan/.jupyter/jupyter_notebook_config.py"
+    ports:
+      - "8888:8888"

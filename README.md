@@ -2,5 +2,5 @@
 Jupyter Sample
 
 ```console
-docker-compose up -d
+docker-compose up
 ```
